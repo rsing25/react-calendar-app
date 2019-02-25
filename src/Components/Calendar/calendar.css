@@ -9,10 +9,7 @@ html {
 body {
   background: #efefef;
 }
-.row {
-  display: flex;
-  width: 100%;
-}
+
 .calendar {
   display: block;
   background: #FFFFFF;
@@ -23,7 +20,7 @@ body {
   font-size: 1.3rem;
   text-align: center;
 }
-.calendar header {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,15 +32,21 @@ body {
   text-transform: uppercase;
   user-select: none;
 }
-.calendar header .month-display {
+.month-display {
   align-items: center;
   height: 40px;
   background: #2875c7;
 }
-.calendar header .month-label {
+.row {
+  display: flex;
+  width: 100%;
+}
+
+
+.month-label {
   flex: 1;
 }
-.calendar header .arrow {
+.arrow {
   text-align: center;
   flex-basis: 15%;
   font-weight: bold;
@@ -54,28 +57,28 @@ body {
   justify-content: center;
   align-items: center;
 }
-.calendar header .arrow:hover {
+.arrow:hover {
   background: #1f5c9d;
 }
-.calendar .week {
+.week {
   border-top: solid 1px #cccccc;
 }
-.calendar .week:first-child {
+.week:first-child {
   border-top: none;
 }
-.calendar .day-names {
+.day-names {
   color: #2875c7;
   font-weight: bold;
   cursor: default;
   font-size: 1.2rem;
 }
-.calendar .day-names .day {
+.day-names .day {
   cursor: default;
 }
-.calendar .day-names .day:hover {
+.day-names .day:hover {
   background: inherit;
 }
-.calendar .day {
+.day {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,19 +88,19 @@ body {
   cursor: pointer;
   transition: all .2s;
 }
-.calendar .day:hover {
+.day:hover {
   background: #efefef;
 }
-.calendar .day:first-child {
+.day:first-child {
   border-left: none;
 }
-.calendar .day.today {
+.day.today {
   background: #dceaf8;
 }
-.calendar .day.different-month {
+.day.different-month {
   color: #c0c0c0;
 }
-.calendar .day.selected {
+.day.selected {
   background: #2875c7;
   color: #FFFFFF;
 }
